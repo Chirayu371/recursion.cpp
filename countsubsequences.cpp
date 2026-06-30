@@ -8,6 +8,7 @@ int countsubsequences(vector<int>&arr,vector<int>&ans,int index,int target){
     }if (index==arr.size()){
         return 0;
     }ans.push_back(arr[index]);
+    0
     int one=countsubsequences(arr,ans,index+1,target-arr[index]);
     ans.pop_back();
     int two=countsubsequences(arr,ans,index+1,target);
